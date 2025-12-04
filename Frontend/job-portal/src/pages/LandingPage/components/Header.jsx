@@ -8,13 +8,13 @@ const Header = () => {
     const user = { fullName: "Gehan", role: "employer" }; // Example user object
     const navigate = useNavigate();
 
-    return <Header>
+    return  <header>
         <div className='container mx-auto px-4'>
             <div className='flex items-center justify-between h-16'>
                 {/* Logo and Title */}
                 <div className='flex items-center space-x-3'>
-                    <div className='w-3 h-8 bg-linear-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center'>
-                        <Briefcase className='w-3 h-5 text-white' />
+                    <div className='w-8 h-8 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center'>
+                        <Briefcase className='w-8 h-5 text-white' />
                     </div>
                     <span className='text-xl font-bold text-gray-900'>JobFinder</span>
                 </div>
@@ -51,7 +51,7 @@ const Header = () => {
                                         ? "/employer-dashboard"
                                         : "/find-jobs"
                                 }
-                                className='bg-linear-to-r from-blue-600 to-purple-600 text-white px-6 py-2 font-medium rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-300 shadow-sm hover:shadow-md'
+                                className='bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-2 font-medium rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-300 shadow-sm hover:shadow-md'
                             >
                                 Go to Dashboard
                             </a>
@@ -66,7 +66,7 @@ const Header = () => {
                             </a>
                             <a
                                 href='/signup'
-                                className='bg-linear-to-r from-blue-600 to-purple-600 text-white px-6 py-2 font-medium rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-300 shadow-sm hover:shadow-md'
+                                className='bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-2 font-medium rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-300 shadow-sm hover:shadow-md'
                             >
                                 Sign Up
                             </a>
@@ -75,7 +75,7 @@ const Header = () => {
                 </div>
             </div>
         </div>
-    </Header>
+    </header>
 
 }
 
